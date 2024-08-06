@@ -1,6 +1,8 @@
 {
   "name": "client-int",
   "version": "0.1.0",
+  "description": "Plataforma interna para el manejo de la cadena de transporte de Puntos de venta, Manejo de clientes, Manejo de perifericos y gestiones relacionadas",
+  "main": "index.js",
   "private": true,
   "scripts": {
     "dev": "next dev",
