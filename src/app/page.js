@@ -1,8 +1,13 @@
 export default function Home() {
   return (
-    <main className="items-center text-center flex flex-col h-screen">
+    <main
+      className="items-center text-center flex flex-col h-screen"
+      id="login"
+    >
       <div className="block items-center justify-center h-[500px] w-[500px] py-2  border rounded-[16px] m-auto bg-white mt-[8%]">
-        <h2 className="text-gray-800 text-xl mt-[20%]">Iniciar Sesion</h2>
+        <h2 className="text-gray-800 text-xl mt-[20%] font-bold">
+          Iniciar Sesion
+        </h2>
         <div className="block w-full m-auto">
           <input
             type="text"
@@ -11,7 +16,7 @@ export default function Home() {
             placeholder="@username"
           ></input>
           <input
-            type="text"
+            type="password"
             id="password"
             className="w-[85%] m-2 border rounded-[8px] h-[35px] p-5"
             placeholder="Password"
@@ -19,13 +24,13 @@ export default function Home() {
           <input
             type="submit"
             id="send"
-            className="w-[85%] m-2 border rounded-[16px] h-[40px] bg-blue-500 text-white"
+            className="w-[85%] m-2 border rounded-[16px] h-[40px] bg-[#18c4a4] text-white"
             value="Iniciar Sesion"
           ></input>
         </div>
         <p className="text-gray-400">
           haz olvidado la contraseña?
-          <a href="#" className="text-blue-400">
+          <a href="#" className="text-[#18c4a4]">
             {" "}
             Haz click aqui
           </a>
@@ -35,7 +40,7 @@ export default function Home() {
       <footer className="sticky bottom-0 mb-5 ">
         <hr className="text-black  mt-5 mb-5"></hr>
         <h2 className="text-gray-500 mt-auto">
-          ©Technological Solutions The Moon, LTD
+          ©Technological Solutions The Moon, LTD - Version 0.0.12
         </h2>
       </footer>
     </main>
