@@ -1,46 +1,43 @@
 export default function Home() {
   return (
     <main
-      className="items-center text-center flex flex-col h-screen"
+      className="items-center text-center flex flex-col min-h-screen"
       id="login"
     >
-      <div className="block items-center justify-center h-[500px] w-[500px] py-2  border rounded-[16px] m-auto bg-white mt-[8%]">
-        <h2 className="text-gray-800 text-xl mt-[20%] font-bold">
-          Iniciar Sesion
-        </h2>
-        <div className="block w-full m-auto">
+      <div className="flex items-center justify-center h-auto w-full max-w-md py-2 border rounded-lg m-auto bg-white mt-8 md:mt-16">
+        <h2 className="text-gray-800 text-xl mt-8 font-bold">Iniciar Sesión</h2>
+        <div className="w-full px-4">
           <input
             type="text"
-            id="usernane"
-            className="w-[85%] m-5 border rounded-[8px] h-[35px] p-5"
+            id="username"
+            className="w-full my-2 border rounded-lg h-10 px-4"
             placeholder="@username"
-          ></input>
+          />
           <input
             type="password"
             id="password"
-            className="w-[85%] m-2 border rounded-[8px] h-[35px] p-5"
+            className="w-full my-2 border rounded-lg h-10 px-4"
             placeholder="Password"
-          ></input>
+          />
           <input
             type="submit"
             id="send"
-            className="w-[85%] m-2 border rounded-[16px] h-[40px] bg-[#18c4a4] text-white"
-            value="Iniciar Sesion"
-          ></input>
+            className="w-full my-2 border rounded-lg h-10 bg-[#18c4a4] text-white"
+            value="Iniciar Sesión"
+          />
         </div>
-        <p className="text-gray-400">
-          haz olvidado la contraseña?
-          <a href="#" className="text-[#18c4a4]">
-            {" "}
-            Haz click aqui
+        <p className="text-gray-400 mt-4">
+          ¿Has olvidado la contraseña?
+          <a href="#" className="text-[#18c4a4] ml-1">
+            Haz click aquí
           </a>
         </p>
       </div>
 
-      <footer className="sticky bottom-0 mb-5 ">
-        <hr className="text-black  mt-5 mb-5"></hr>
-        <h2 className="text-gray-500 mt-auto">
-          ©Technological Solutions The Moon, LTD - Version 0.0.12
+      <footer className="sticky bottom-0 mb-5 w-full text-center">
+        <hr className="text-black mt-5 mb-5" />
+        <h2 className="text-gray-500">
+          ©Technological Solutions The Moon, LTD - Versión 0.0.12
         </h2>
       </footer>
     </main>
