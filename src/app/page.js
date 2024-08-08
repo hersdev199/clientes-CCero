@@ -1,46 +1,52 @@
 export default function Home() {
   return (
     <main
-      className="items-center text-center flex flex-col h-screen"
+      className="w-full h-screen items-center text-center flex flex-col"
       id="login"
     >
-      <div className="block items-center justify-center h-[500px] w-[500px] py-2  border rounded-[16px] m-auto bg-white mt-[8%]">
-        <h2 className="text-gray-800 text-xl mt-[20%] font-bold">
-          Iniciar Sesion
+      <div
+        id="login-container"
+        className="block items-center justify-center h-[500px] w-[500px] py-2 border rounded-[16px] m-auto bg-white mt-[8%]"
+      >
+        <h2
+          id="login-title"
+          className="text-gray-800 text-xl mt-[20%] font-bold"
+        >
+          Iniciar Sesión
         </h2>
-        <div className="block w-full m-auto">
+        <div id="input-container" className="block w-full m-auto">
           <input
             type="text"
-            id="usernane"
+            id="username"
             className="w-[85%] m-5 border rounded-[8px] h-[35px] p-5"
             placeholder="@username"
-          ></input>
+          />
           <input
             type="password"
             id="password"
             className="w-[85%] m-2 border rounded-[8px] h-[35px] p-5"
             placeholder="Password"
-          ></input>
+          />
           <input
             type="submit"
             id="send"
             className="w-[85%] m-2 border rounded-[16px] h-[40px] bg-[#18c4a4] text-white"
-            value="Iniciar Sesion"
-          ></input>
+            value="Iniciar Sesión"
+          />
         </div>
-        <p className="text-gray-400">
-          haz olvidado la contraseña?
+        <p id="forgot-password" className="text-gray-400">
+          ¿Has olvidado la contraseña?
           <a href="#" className="text-[#18c4a4]">
             {" "}
-            Haz click aqui
+            Haz click aquí
           </a>
         </p>
       </div>
 
-      <footer className="sticky bottom-0 mb-5 ">
-        <hr className="text-black  mt-5 mb-5"></hr>
-        <h2 className="text-gray-500 mt-auto">
-          ©Technological Solutions The Moon, LTD - Version 0.0.12
+      <footer id="footer" className="sticky bottom-0 mb-5 w-full text-center">
+        <hr className="text-black mt-5 mb-5" />
+        <h2 className="text-gray-500">
+          ©Technological Solutions The Moon, LTD - Versión 0.0.12
         </h2>
       </footer>
     </main>

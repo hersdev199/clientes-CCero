@@ -20,11 +20,66 @@ body{
   background-color: #f1f4f8;
 }
 
-#usernane, #password{
+#username, #password{
   background-color: #f1f4f8;
 }
 
 #login{
   background: rgb(255,255,255);
   background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(24,196,164,1) 35%, rgba(255,255,255,1) 100%);
+}
+
+#login-container {
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  margin-top: 10%;
+  padding: 2rem;
+}
+
+#login-title {
+  margin-top: 2rem;
+}
+
+#input-container input {
+  width: 100%;
+  margin: 0.5rem 0;
+  height: 2.5rem;
+  padding: 0.5rem;
+}
+
+#send {
+  height: 2.5rem;
+  margin-top: 1rem;
+}
+
+#forgot-password {
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  #login-container {
+    margin-top: 8%;
+    padding: 2rem;
+  }
+
+  #login-title {
+    margin-top: 20%;
+  }
+
+  #input-container input {
+    width: 85%;
+    margin: 1rem 0;
+    height: 2.5rem;
+    padding: 1rem;
+  }
+
+  #send {
+    height: 2.5rem;
+    margin-top: 1rem;
+  }
+
+  #forgot-password {
+    margin-top: 1rem;
+  }
 }
