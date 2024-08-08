@@ -35,6 +35,8 @@ body{
   height: auto;
   margin-top: 10%;
   padding: 2rem;
+  position: relative;
+  z-index: 10;
 }
 
 #login-title {
@@ -77,6 +79,7 @@ body{
   #send {
     height: 2.5rem;
     margin-top: 1rem;
+    padding: 0rem !important;
   }
 
   #forgot-password {
